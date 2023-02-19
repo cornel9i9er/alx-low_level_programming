@@ -15,6 +15,7 @@ int main(void)
 		if (a == 10)
 		{
 			printf("\n");
+			a++;
 			continue;
 		}
 		printf("%d", a);
