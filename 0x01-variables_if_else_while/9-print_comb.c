@@ -13,20 +13,15 @@ int main(void)
 	for (i = 48; i <= 57; i++)
 	{
 		putchar(i);
-		if (i == 57)
+		if (i < 57)
 		{
-			comma = 36;
-			space = 10;
-
+		putchar(comma);
+		putchar(space);
 		}
 		else
 		{
-			comma = 44;
-			space = 32;
-
+			continue;
 		}
-		putchar(comma);
-		putchar(space);
 	}
 	return (0);
 }
