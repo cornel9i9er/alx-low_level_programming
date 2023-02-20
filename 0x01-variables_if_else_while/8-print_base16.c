@@ -19,4 +19,5 @@ int main(void)
 		putchar(j);
 	}
 	putchar(10);
+	return (0);
 }
