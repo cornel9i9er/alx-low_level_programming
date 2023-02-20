@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (i == 122)
 		{
-			putchar('\n');
+			putchar('10');
 			continue;
 		}
 		putchar(i);
