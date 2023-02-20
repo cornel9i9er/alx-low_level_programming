@@ -14,7 +14,8 @@ int main(void)
 		if (j == 101 || j == 113)
 			continue;
 		putchar(j);
-
+		if (j == 122)
+			putchar(10);
 	}
 	return (0);
 }
