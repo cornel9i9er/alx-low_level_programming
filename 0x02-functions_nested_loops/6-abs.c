@@ -9,6 +9,6 @@
 
 int _abs(int c)
 {
-	c = 0 - c
+	c = 0 - c;
 	return (c);
 }
