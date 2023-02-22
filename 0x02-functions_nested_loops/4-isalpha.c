@@ -10,21 +10,21 @@ int _isalpha(int c)
 {
 	int i;
 	int j;
-	bool upper;
-	bool lower;
+	int upper;
+	int lower;
 
 	for (i = 41; i <= 90; i++)
 	{
 		if (c == i)
 		{
-			upper = true;
+			upper = 1;
 		}
 	}
 	for (j = 97; j <= 122; j++)
 	{
 		if (c == j)
 		{
-			lower = true;
+			lower = 1;
 		}
 	}
 	if (lower || upper)
