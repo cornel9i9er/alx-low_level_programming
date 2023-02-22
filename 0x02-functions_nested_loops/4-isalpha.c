@@ -10,8 +10,8 @@ int _isalpha(int c)
 {
 	int i;
 	int j;
-	int upper;
-	int lower;
+	int upper = 0;
+	int lower = 0;
 
 	for (i = 65; i <= 90; i++)
 	{
