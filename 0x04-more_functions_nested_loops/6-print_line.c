@@ -12,12 +12,12 @@ void print_line(int n)
 	if (n == 0 || n < 0)
 	{
 		_putchar(10);
-		return (0);
+		return;
 	}
 	for (i = n; i > 0; i--)
 	{
 		_putchar('_');
 	}
 	_putchar(10);
-	return (0);
+	return;
 }
