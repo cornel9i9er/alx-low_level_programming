@@ -23,7 +23,7 @@ void print_triangle(int size)
 			{
 				int here = size - i;
 
-				if (j == here)
+				if (j == here || j > here)
 				{
 					_putchar('#');
 				}
@@ -32,6 +32,7 @@ void print_triangle(int size)
 					_putchar(' ');
 				}
 			}
+			_putchar(10);
 		}
 		_putchar(10);
 	}
