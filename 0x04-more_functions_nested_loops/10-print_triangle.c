@@ -21,7 +21,7 @@ void print_triangle(int size)
 		{
 			for (j = 0; j < size; j++)
 			{
-				int here = size -1 - i;
+				int here = size - 1 - i;
 
 				if (j == here || j > here)
 				{
