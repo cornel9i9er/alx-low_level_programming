@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  *_puts - magic function
  *@str: pointer to string vr
