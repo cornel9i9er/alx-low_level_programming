@@ -18,7 +18,6 @@ void _puts(char *str)
 		}
 		else
 		{
-			_putchar('\0');
 			break;
 		}
 	}
