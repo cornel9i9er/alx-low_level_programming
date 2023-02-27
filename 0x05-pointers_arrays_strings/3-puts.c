@@ -15,6 +15,7 @@ void _puts(char *str)
 		{
 			_putchar(str[i]);
 			i++;
+		}
 		else
 		{
 			_putchar('\0');
