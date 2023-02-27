@@ -7,8 +7,18 @@
  */
 void _puts(char *str)
 {
-	while (str && (*str++) != '\0')
+	while (1)
 	{
-		_putchar(*str);
+		if (*str != '\0')
+		{
+			_putchar(*str);
+			*str++
+		}
+		else
+		{
+			_putchar('\0');
+			break;
+		}
 	}
+	_putchar(10);
 }
