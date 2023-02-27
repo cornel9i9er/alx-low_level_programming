@@ -7,13 +7,14 @@
  */
 void _puts(char *str)
 {
+	int i = 0;
+
 	while (1)
 	{
-		if (*str != '\0')
+		if (str[i] != '\0')
 		{
-			_putchar(*str);
-			*(str++);
-		}
+			_putchar(str[i]);
+			i++;
 		else
 		{
 			_putchar('\0');
