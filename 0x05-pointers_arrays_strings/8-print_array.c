@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * print_array - print n array elements
  *@a: pointer to array
