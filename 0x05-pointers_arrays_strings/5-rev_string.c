@@ -16,7 +16,7 @@ void rev_string(char *s)
 	}
 	if (len % 2 != 0)
 	{
-		int len = (len - 1) / 2;
+		len = (len - 1) / 2;
 		int i;
 
 		for (i = 0; i < len; i++)
@@ -29,7 +29,7 @@ void rev_string(char *s)
 	}
 	else
 	{
-		int len = len / 2;
+		len = len / 2;
 		int i;
 
 		for (i = 0; i < len; i++)
