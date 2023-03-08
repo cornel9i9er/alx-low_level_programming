@@ -10,7 +10,7 @@ unsigned int wrapper(int n, int guess);
 
 int _sqrt_recursion(int n)
 {
-	return (wrapper(n, 2));
+	return (wrapper(n, 1));
 }
 
 /**
