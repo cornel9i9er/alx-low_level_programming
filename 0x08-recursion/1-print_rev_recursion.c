@@ -38,10 +38,10 @@ int _strlen(char *s, int x)
  */
 int reverse(char *s, int x)
 {
-	_putchar(*s);
 	if (x == 0)
 	{
 		return (1);
 	}
+	_putchar(*s);
 	return (reverse(s - 1, x -= 1));
 }
