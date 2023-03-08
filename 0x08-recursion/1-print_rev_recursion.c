@@ -26,7 +26,7 @@ int _strlen(char *s, int x)
 	{
 		return (_strlen(s + 1, x += 1));
 	}
-	return (reverse(s, x));
+	return (reverse(s, x - 1));
 }
 
 /**
