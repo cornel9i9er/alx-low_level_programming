@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - the father of the program
  * @argc: contains command line arugument count
