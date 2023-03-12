@@ -3,7 +3,7 @@
 #include "strlen.c"
 #include "_itoa.c"
 #include "_atoi.c"
-
+#include "_putchar.c"
 void check(int *n, int *coins);
 
 /**
