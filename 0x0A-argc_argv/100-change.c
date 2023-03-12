@@ -25,9 +25,9 @@ int main(int argc, char *argv[])
 
 		for (i = 0; i < _strlen(e) - 1; i++)
 		{
-			putchar(*(e + i));
+			_putchar(*(e + i));
 		}
-		putchar(10);
+		_putchar(10);
 		return (1);
 	}
 	else
@@ -36,8 +36,8 @@ int main(int argc, char *argv[])
 	}
 	if (n < 0)
 	{
-		putchar(48);
-		putchar(10);
+		_putchar(48);
+		_putchar(10);
 	}
 	else
 	{
