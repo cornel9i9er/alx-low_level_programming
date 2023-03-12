@@ -1,5 +1,8 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
+#include "strlen.c"
+#include "_itoa.c"
+#include "_atoi.c"
 
 void check(int *n, int *coins);
 
@@ -14,15 +17,22 @@ int main(int argc, char *argv[])
 {
 	int n = 0;
 	int coins = 0;
+	int i;
+	char *e = "Error\n";
 
 	if (argc < 2 || argc > 2)
 	{
-		printf("Error\n");
+
+		for (i = 0; i < _strlen(e) - 1; i++)
+		{
+			putchar(*(e + i));
+		}
+		putchar(10);
 		return (1);
 	}
 	else
 	{
-		n = atoi(argv[1]);
+		n = _atoi(argv[1]);
 	}
 	if (n < 0)
 	{
@@ -32,7 +42,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		check(&n, &coins);
-		printf("%d\n", coins);
+		_itoa(coins);
 	}
 	return (0);
 }
@@ -79,3 +89,5 @@ void check(int *n, int *coins)
 		}
 	}
 }
+
+
