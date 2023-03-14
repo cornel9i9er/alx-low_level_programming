@@ -1,6 +1,6 @@
 #include <unistd.h>
 #include "main.h"
-void *_itoa(int n, char *s);
+
 /**
  * main - the father of the program
  * @argc: contains command line arugument count
@@ -37,13 +37,12 @@ int main(int argc, char *argv[])
  * @s: pointer to an empty char aray
  * Return: void.
  */
-void *_itoa(int n, char *s)
+void _itoa(int n, char *s)
 {
 	int i = 0;
 	char z;
 	int it = 0;
 	int k;
-	int j;
 	int len = 0;
 
 	while (1)
@@ -80,4 +79,17 @@ void *_itoa(int n, char *s)
 		*(s + k) = *(s + len - 1 - k);
 		*(s + len - 1 - k) = z;
 	}
+}
+
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+        return (write(1, &c, 1));
 }
