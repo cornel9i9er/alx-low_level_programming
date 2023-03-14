@@ -11,7 +11,7 @@ char *_strdup(char *str)
 {
 	char *s;
 	int len = 0;
-	int i = 0;	
+	int i = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -27,7 +27,7 @@ char *_strdup(char *str)
 			break;
 		}
 	}
-	 s = (char *)malloc(sizeof(char) * len);
+	s = (char *)malloc(sizeof(char) * (len +  1));
 	if (s == NULL)
 		return (NULL);
 	for (i = 0; i <= len; i++)
