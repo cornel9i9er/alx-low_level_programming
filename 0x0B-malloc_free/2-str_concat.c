@@ -17,9 +17,9 @@ char *str_concat(char *s1, char *s2)
 	int itr = 0;
 	char *s;
 
-	if (*s1 == NULL)
+	if (s1 == NULL)
 		*s1 = "";
-	else if (*s2 == NULL)
+	else if (s2 == NULL)
 		*s2 = "";
 	while (1)
 	{
@@ -68,6 +68,8 @@ char *str_concat(char *s1, char *s2)
  */
 void *set(char *s, char *s1, char *s2, int len1, int len2)
 {
+	int i;
+
 	for (i = 0; i < len1 + len2; i++)
 	{
 		if (i < len1)
