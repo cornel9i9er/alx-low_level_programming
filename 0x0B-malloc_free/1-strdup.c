@@ -1,6 +1,6 @@
 #include <stddef.h>
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * _strdup - allocates a membloc and copies a string in it.
  * @str: allocated string.
@@ -29,6 +29,8 @@ char *_strdup(char *str)
 		}
 	}
 	 s = (char *)malloc(sizeof(char) * len);
+	if (s == NULL)
+		return (NULL);
 	for (i = 0; i <= len; i++)
 	{
 		*(s + i) = *(str + i);
