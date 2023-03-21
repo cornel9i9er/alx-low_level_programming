@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "dog.h"
 /**
  * free_dog - frees mem allocated for the mem struct
  * @d: pointer to the struct
