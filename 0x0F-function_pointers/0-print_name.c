@@ -1,4 +1,4 @@
-#include "function_pointers.h"
+
 /**
  * print_name - calls a passed function
  *
@@ -8,5 +8,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
+	if (name == NULL)
+		name = "";
 	f(name);
 }
