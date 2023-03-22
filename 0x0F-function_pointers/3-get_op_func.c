@@ -1,5 +1,5 @@
-#include "3-calc.h"
-#include <stdlib.h>
+#include"3-calc.h"
+
 /**
  * get_op_func - gets function depending on operator given
  * @s: the char arr to matcch the operator.
