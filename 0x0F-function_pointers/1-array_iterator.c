@@ -1,3 +1,4 @@
+#include "function_pointers.h"
 /**
  * array_iterator - runs a function through elements of an array.
  *
