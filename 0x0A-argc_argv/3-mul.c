@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	char *E = "Error";
 	int i;
-	unsigned int result;
+	long int result;
 	int *arr = NULL;
 
 	if (argc != 3)
