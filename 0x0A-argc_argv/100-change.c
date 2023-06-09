@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
 	{
 		putchar('0');
 		putchar(10);
+		return (0);
 	}
 	for (i = 0; i < 5; i++)
 	{
