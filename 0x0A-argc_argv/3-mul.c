@@ -19,14 +19,6 @@ int main(int argc, char *argv[])
 		buffer(E);
 		return (1);
 	}
-	for (i = 1; i < argc; i++)
-	{
-		if (checker(argv[i]) == 0)
-		{
-			buffer(E);
-			return (1);
-		}
-	}
 	result = atoi(argv[1]) * atoi(argv[2]);
 	arr = malloc(sizeof(int) * _log(result));
 	if (result < 0)
@@ -42,38 +34,6 @@ int main(int argc, char *argv[])
 	putchar(10);
 	free(arr);
 	return (0);
-}
-/**
- * checker - checks if passed array contains digits only.
- *
- * @s: array of chars.
- *
- * Return: 0 if not a digit, 1 otherwise.
- */
-int checker(char *s)
-{
-	int i;
-
-	while (*s != '\0')
-	{
-		for (i = '0'; i <= '9'; i++)
-		{
-			if (*s == '-' || *s == '+')
-			{
-				continue;
-			}
-			else if (*s == i)
-			{
-				break;
-			}
-			else if (i == '9')
-			{
-				return (0);
-			}
-		}
-		s += 1;
-	}
-	return (1);
 }
 /**
  * buffer - prints out string s.
