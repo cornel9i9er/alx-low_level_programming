@@ -58,10 +58,9 @@ int checker(char *s)
 	{
 		for (i = '0'; i <= '9'; i++)
 		{
-			if (*s == '-')
+			if (*s == '-' || *s == '+')
 			{
-				s += 1;
-				i = '0';
+				continue;
 			}
 			else if (*s == i)
 			{
