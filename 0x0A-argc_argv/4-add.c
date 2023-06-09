@@ -33,7 +33,7 @@ int  main(int argc, char *argv[])
 	if (sum < 0)
 	{
 		putchar('-');
-		result *= -1;
+		sum *= -1;
 	}
 	array(sum, arr);
 	for (i = _log(sum) - 1; i >= 0; i--)
