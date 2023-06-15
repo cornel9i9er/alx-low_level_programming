@@ -1,5 +1,5 @@
 #include "main.h"
-/*
+/**
  * malloc_checked - allocates mem and checks if pointer failed.
  *
  * @b: allocated mem in bytes.
